@@ -1,0 +1,74 @@
+We can represent data with single value types, but what about multiple values?
+
+# Lists/Arrays
+Values (usually of the same type) in a structure. 
+- ['hello','world','campfyre'] 
+- [43,11,10]
+- [False,True,True,True,False]
+Index based, with 0 as the first index 
+- firstValue = list1[0] // this assigns the 1st value of list1 to firstValue variable
+- secondValue = list1[1] // this assigns the 2nd value of list1 to secondValue variable
+Lists/arrays are classes/objects with operations to change the structure
+- list1.append("1")
+- list1.append(someValue)
+- list1.remove("1")
+
+Assign values based on sentence: The class has 3 students, Alice, Steven, and Jacob. Isabelle was added to the class last week. Steven is leaving the class next week.
+
+classroom = ['Alice','Steven','Jacob']
+classroom.append('Isabelle') // classroom is now ['Alice','Steven','Jacob','Isabelle']
+classroom.remove('Steven') or classroom.remove(classroom[1])
+
+# Sets 
+Same as Lists/Arrays, but no values can be duplicated (uniqueness). Some languages prevent you from adding values, some throw errors, some will simply not add to the list.
+
+set_of_voter_names = ['Alice','Steven','Jacob','Isabelle']
+
+set_of_voter_names.append("Kira") // ['Alice','Steven','Jacob','Isabelle','Kira']
+set_of_voter_names.append("Alice") // ['Alice','Steven','Jacob','Isabelle','Kira'], note that even though we added Alice, the set didn't change. 
+
+
+set_of_voter_ages = [18,21,35,19]
+
+set_of_voter_ages.append(18) // [18,21,35,19] adding the same element doesnt change the set 
+set_of_voter_ages.append(18) // [18,21,35,19] adding the same element doesnt change the set 
+set_of_voter_ages.append(18) // [18,21,35,19] adding the same element doesnt change the set 
+set_of_voter_ages.append(35) // [18,21,35,19] adding the same element doesnt change the set 
+set_of_voter_ages.append(36) // [18,21,35,19, 36] adding a different element will change the set
+
+# Dictionaries/Maps/HashSet
+
+A data structure with a key value pair. Data is assigned to a key, usually a string. Keys cannot repeat.
+{
+    key1:value1 // values can be single values
+    key2:value2
+    key3:[listItem1,listItem2] // or multi-values such as list
+    key4:{ // or even dictionaries within dictionaries!
+        key1:value1
+        key2:value2
+    }
+}
+
+// a very boring SSN example:
+
+ssn_citizen_dict = {
+    "123-456-7890":"Katherine",
+    "123-456-7891":"Catherine",
+    "123-456-7892":"David",
+    "123-456-7893":"Katherine", // values are not unique, but keys are 
+    "123-456-7894":"Wallace",
+    "123-456-7895":"Arnold",
+}
+
+setting, retrieving values using the keys:
+
+ssn_citizen_dict["123-456-7890"] = "Cathy"
+ssn_citizen_dict["123-456-7890"] = "Kathy" // depending on the language, some will let you change data
+ssn_citizen_dict["123-456-7899"] = "Reginald" // dictionary detects this is a new key and adds the new key + value
+ssn_citizen_dict["123-456-7899"] // returns "Reginald" 
+
+ssn_citizen_dict.delete("123-456-7899") // psuedo code to delete an entry
+
+ssn_citizen_dict.keys() // returns all of the keys of a dictionary
+ssn_citizen_dict.values() // returns all of the values of a dictionary
+

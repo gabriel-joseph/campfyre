@@ -1,0 +1,18 @@
+Languages are how things communicate. They usually follow linguistic patterns and rules (grammer).
+Programming languages differ in syntax and purpose, but they usually have some core characteristics:
+
+1. They are written into files and the extension denotes the language
+- *.sql,*.js,*.go
+2. The language itself is maintained by an entity and is downloaded onto machines
+- Java from Orcale/Java, Python from Python.org
+3. Files are "run" by following the language's lifecycle/nature (such as interpretation, compilation, deployment)
+- Java is compiled and then run, Python is interpreted, JavaScript can be run on browsers/Node
+4. Languages have keywords and the language understands code based on syntax and keywords
+- class, var, boolean, Map are designated keywords for a language and the language will expect certain syntax with those words
+5. Languages print information for developers to inform and educate
+- Throwing errors and exceptions instead of crashing
+6. They are versioned (different features)
+- Python 2, Python 3.6, Python 3.11
+7. Comments!
+ - # comments in python, // in java, // in javascript
+

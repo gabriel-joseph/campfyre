@@ -1,0 +1,97 @@
+All data can be classified into types. Languages understand data and types.
+- boolean, string, number
+Variables can be assigned data values with the assign operator (=). 
+- isCooking = true, age = 21, name = "John"
+Single value data refers to a space in memory assigned to a single value
+- After assigning favoriteMovie = "Jurassic Park", favoriteMovie will always have the value "Jurassic Park" unless acted upon (such as reassigned or deleted)
+"Built-in" data types are often referred to as primitive data types to differentiate themselves from external or custom types
+- boolean, number, string vs Temperature, EyeColor
+
+
+# Integer
+A single whole number
+
+Examples:
+55
+283849018293091823
+-33
+0
+1
+-10000000
+
+Assign values based on sentence: I am 35. I have 3 cats. I get 12 vacation days a year. My salary is $55,000. 
+
+age = 35
+numberOfCatsOwned = 3
+vacationDaysPerYear = 12
+salary = 55000
+
+# Float
+A number that contains decimals
+
+Examples:
+55.0
+1.0
+0.0
+3.14
+.23423
+0.23423
+-12.0
+-55.182318
+
+
+Assign values based on sentence: White spaces takes up 30% of my project's. I use python 3.12. Hurricanes impact 33 out of every 1,000 Americans. The current temp is 77.5 degrees celsius. The lat and lon of hometown is 33.11, -109.55.
+
+whiteSpaceOfProject = 0.3
+pythonVersion = 3.12
+americansImpactedByHurricanes = 0.033 
+currentTempInFahrenheit = 77.5
+hometownLat = 33.11
+hometownLon = -109.55
+
+# Characters and Strings
+
+Characters are letters, numbers, emojis, and ASCII representations (such as ! and ). They're often called "chars" and some languages view char (single characters) as datatypes. 
+Strings are comprised of characters, strung together.
+Both are usually contained in quotes (single or double)
+
+Chars:
+letterA = "A"
+letterB ="B"
+Exclamation = "!"
+smiley = "😀"
+three = "3"
+degrees = "°"
+usDollars = "$"
+
+Strings:
+greeting = "hello world"
+name = "John Doe"
+rhyme = "In 1492 Columbus sailed the Ocean Blue"
+letterA = "A"
+smiley = "😀"
+betterGreeting = "Greetings {userName}, let's get started!"
+
+# Boolean
+Boolean types are True or False, reflecting the state of truth. 
+
+True or true:
+True
+4 > 3
+"A" == "A" // does A equal A?
+"campfyre".contains("camp") // does "campfyre" contain the characters c a m p in that order?
+
+False or false:
+3 > 4
+"B" == "A" // does B equal A?
+"campfyre".contains("campfire") // does "campfyre" contain the characters c a m p f i r e in that order?
+
+Sentence to convert to data structure:
+
+I am 21. My salary is $90,000 a year and my tax rate is 12%. I don't have a facebook account. 
+
+age = 21
+salary = 90000 
+tax_rate = .12
+has_facebook_acc = false 
+

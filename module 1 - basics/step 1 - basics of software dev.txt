@@ -1,0 +1,32 @@
+Hardware is the physical components that make up computers
+- Motherboard, processor, RAM
+Software is the instructions and programs that tell hardware and other softwware what to do
+- OS, browser, command line, file explorer, applications
+Computer Science is the study of how data is computed (handled, stored, operated on) by machines
+- Programming languages, low-level/abstraction practices, kernels, algorithms, data structures
+Engineers design and develop solutions based on applied sciences/mathetatics. 
+- Chemical engineers use periodic table to design and develop solutions based on the laws of chemistry, elements, etc.
+- Aerospace engineers use math and physics to design and deploy
+* note - engineers USE science and math, they do not need to prove laws/science each time they use them or reinvent the wheel
+* Chemical engineers don't need to memorize periodic table or know every element's proton numbers, but they do need to know that each element has a unique number of protons
+* Software engineers don't need to know every language, data structure, algo, etc. but they do need to understand basics (such as data addresses in memory)
+
+How do engineers write instructions? Languages 
+
+
+Action:
+When the car turns on, set the temperature to 70 and turn the screen on. After 3 seconds, play a chime and print the fuel level.
+
+Code:
+
+turn_on_car()
+set temp = 70
+screen_on = True
+wait(3)
+play_chime()
+print_fuel(car.get_current_fuel())
+
+Machine code:
+
+1X3209 X98 BUFR % 79
+210==78
