@@ -1,0 +1,47 @@
+Objects are a data type offered by some languages, but the principles of objects are useful.
+Objects are things. They can have attributes, called properties/fields corresponding to data types and methods, which are functions assigned to an object/class. 
+Similar to dictionaries, properties/method names must be unique.
+
+
+
+// object describing an event
+concert = {
+    nameOfEvent:"Lollapalooza",
+    attendance:60000,
+    location:"Chicago" // properties can be single values
+    vendors:["Coke","Five Guys","Shelby's"], // properties can be lists
+}
+
+cruise = {
+    attendance:6000,
+    nameOfEvent:"Disney Cruise",
+    location:"Atlantic" // properties can be single values
+    vendors:["Disney","Caesar's Casino","Sony","Apple"], // properties can be lists
+}
+
+
+concert.name // get "Lollapalooza"
+
+
+
+Classes are instructions/blueprints for Objects. They define what shapes object have and their core purpose.
+Objects are created when a class is instantiated, usually with a constructor.
+
+class Event {
+    // what makes up an event?
+    attendance:number
+    nameOfEvent:string
+    location:string
+    vendors:string[]
+
+    constructor(attendance:number){
+        this.attendance = attendance
+        ...
+    }
+}
+
+
+grammys = new Event(attendance:500)
+grammys = new Event(500)
+
+

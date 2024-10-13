@@ -1,0 +1,1 @@
+Classes and objects can contain methods. Methods are functions on objects.

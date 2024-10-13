@@ -1,0 +1,23 @@
+Functions are callable tasks. They contain instructions, kind of like mini-programs. They execute top to bottom. 
+Functions vary by language, but they are typically written like this:
+
+function signUp(){
+    print("You are signed up!")
+}
+
+This is the function declaration. They are called by their declaration:
+
+signUp() // this would print "You are signed up!"
+
+Arguments can be optionally be declared in the function.
+
+function signUp(name:string){
+    print("Congrats",name,"!")
+    print("You are signed up!")
+}
+
+Fucntions are declared and assigned, similar to variables, with the key difference that they can be called to execute the tasks inside.
+
+signUp("Megan")
+signUp("Jason")
+
