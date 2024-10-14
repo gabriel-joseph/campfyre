@@ -1,0 +1,22 @@
+Java was created in 1996 by Sun systems.
+In 2009 Sun Systems was aquired by oracle, who has maintained the development of Java.
+
+https://www.oracle.com/java/
+https://www.java.com/en/
+
+Java is OOP and strictly typed, so there's a bit of rules/syntax to learn.
+
+
+
+
+public class FirstJavaClass {
+
+    
+}
+
+
+For general use, simply download a JDK from either source (or homebrew/Chocolatey)
+
+But before we download Java, open a terminal and type "java". If your computer doesn't have Java, you should get an error.
+This is your first experience with what happens when you try to access/use a language before it is installed.
+
