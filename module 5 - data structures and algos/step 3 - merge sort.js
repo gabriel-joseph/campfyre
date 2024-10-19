@@ -1,70 +1,38 @@
-// Merge function to merge two sorted arrays
 function merge(left, right) {
-    let sortedArray = [];
-    let leftIndex = 0;
-    let rightIndex = 0;
-  
-    // Log the left and right arrays before merging
-    console.log(`Merging left: [${left}] and right: [${right}]`);
-    //[5]
-    // leftIndex = 1
-    // rightIndex = 1
-
-    // Merge the two arrays into one sorted array
-    while (leftIndex < left.length && rightIndex < right.length) {
-      if (left[leftIndex] < right[rightIndex]) {
-        sortedArray.push(left[leftIndex]);
-        leftIndex++;
-      } else {
-        sortedArray.push(right[rightIndex]);
-        rightIndex++;
-      }
+    let startIndexLeft = 0
+    let startIndexRight = 0
+    let mergedSortedArray = []
+    
+    while (startIndexLeft < left.length && startIndexRight < right.length) {
+        if (left[startIndexLeft] < right[startIndexRight]) {
+            mergedSortedArray.push(left[startIndexLeft])
+            startIndexLeft++
+        } else {
+            mergedSortedArray.push(right[startIndexRight])
+            startIndexRight++
+        }
     }
-  
-    // Log the sorted portion before concatenating remaining elements
-    console.log(`Partially merged array: [${sortedArray}]`);
-  
-    // Correctly track the remaining elements in both left and right arrays
-    const leftLeftovers = left.slice(leftIndex);
-    const rightLeftovers = right.slice(rightIndex);
-    
-    // Concat remaining elements from left or right
-    const leftovers = leftLeftovers.concat(rightLeftovers);
-    
-    const finalArray = sortedArray.concat(leftovers);
-  
-    // Log the fully merged result
-    console.log(`Final merged array: [${finalArray}]`);
-  
-    return finalArray;
-  }
-  
 
-// Merge Sort function using divide and conquer
+    const rightLeftovers = right.slice(startIndexRight)
+    const leftLeftovers = left.slice(startIndexLeft)
+    const leftovers = rightLeftovers.concat(leftLeftovers)
+    return mergedSortedArray.concat(leftovers)
+
+}
+
+
 function mergeSort(arr) {
-  // Base case: an array with one or no elements is already sorted
-  if (arr.length <= 1) {
-    console.log(`Base case reached with array: [${arr}]`);
+  const length = arr.length;
+  if (length <= 1) {
     return arr;
   }
 
-  // Divide the array into two halves
-  const mid = Math.floor(arr.length / 2);
-  const left = arr.slice(0, mid);
-  const right = arr.slice(mid);
-
-  // Log the current array and its division into two parts
-  console.log(
-    `Dividing array: [${arr}] into left: [${left}] and right: [${right}]`
-  );
-
-    // [5,100,990],[7,19,20]
-    // [5],[990,100] -> merge queded
-    // 990, 100 -> [100,990]
-  // Recursively sort both halves, then merge them
-  return merge(mergeSort(left), mergeSort(right));
+  const middle = Math.floor(length / 2);
+  const left = arr.slice(0, middle);
+    const right = arr.slice(middle);
+ 
+  return merge(mergeSort(left),mergeSort(right))
 }
-
 
 // Example usage
 const array = [38, 27, 43, 3, 9, 82, 10];
