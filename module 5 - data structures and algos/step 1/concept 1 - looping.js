@@ -46,3 +46,15 @@ while (counter < listOfNumbers.length) {
   counter += 1;
 }
 
+
+
+/**
+ * 
+ * Basic looping notes: nums.length vs nums.length - 1
+ * 
+ * - nums.length: Loop through the entire array.
+ * - nums.length - 1: Stop early (e.g., if comparing current element with next).
+ * 
+ * Use i < nums.length to stop before going out of bounds.
+ * Use i <= nums.length - 1 to explicitly include the last element.
+ */

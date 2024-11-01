@@ -1,0 +1,14 @@
+{
+  "name": "campfyre",
+  "version": "1.0.0",
+  "description": "Provide basic knowledge of software engineering for entry-mid level skillset",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.3.3"
+  }
+}

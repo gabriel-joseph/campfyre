@@ -8,18 +8,12 @@ These are 3 of the most popular and versatile languages. They are constantly sou
 
 # Syllabus:
 
-* Course basics/goals (i.e. this doc)
-* Intro to languages/software
-* Java
-* JavaScript
-* Python
-** Basics
-*** data types
-*** classes
-*** control flow
-**
-
-
-
-
-
+- Course basics/goals (i.e. this doc)
+- Intro to languages/software
+- Java
+- JavaScript
+- Python
+  ** Basics \*** data types
+  **_ classes
+  _** control flow
+  \*\*
