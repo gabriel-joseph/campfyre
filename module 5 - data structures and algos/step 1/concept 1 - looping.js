@@ -18,7 +18,7 @@ console.log("\nfor...of loop");
 /**
  * for...of loop
  * Iterates directly over array values
- * No index is required
+ * You don't get an index!
  */
 for (const num of listOfNumbers) {
   console.log(`${num} is in the array`);
@@ -40,6 +40,7 @@ let counter = 0;
 /**
  * While loop
  * Continues as long as the counter is less than the array's length
+ * Note the same < length syntax
  */
 while (counter < listOfNumbers.length) {
   console.log(`${listOfNumbers[counter]}'s index is ${counter}`);

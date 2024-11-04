@@ -30,5 +30,5 @@ var rotate = function(nums, k) {
 let list = [-1, -100, 3, 99]
 let k = 2
 
-list = rotate([-1, -100, 3, 99], k)
+list = rotate(list, k)
 console.log(list)
